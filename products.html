@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Carousel Template · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Georges Garden</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="products.html" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html">All Products</a></li>
+              <li><a class="dropdown-item" href="products.html">New Arrivals</a></li>
+              <li><a class="dropdown-item" href="products.html">Seasons Gifts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contacu Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div class="sub-header">
+    <img class="sub-header-img" src="images/p-header.jpg" alt="Header">
+    <p class="p-header-h1">Gardening, a step towards a better future</p>
+  </div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <p class="p-section-title">Gifts</p>
+      <div class="col-lg-4">
+        <div>
+          <img class="section01-img" src="images/gift01.jpg" alt="Gifts">
+        </div>
+        <div class="p-products">
+          <h2 class="fw-normal">Gift</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/gift02.jpg" alt="Gifts">
+        <div class="p-products">
+          <h2 class="fw-normal">Gift</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/gift03.jpg" alt="Gifts">
+        <div class="p-products">
+          <h2 class="fw-normal">Gift</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <hr class="hr01">
+
+    <div class="row">
+      <p class="p-section-title">Indoor Plants</p>
+      <div class="col-lg-4">
+        <div>
+          <img class="section01-img" src="images/iplant01.jpg" alt="Indoor Plants">
+        </div>
+        <div class="p-products">
+          <h2 class="fw-normal">Indoor Plants</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/iplant02.jpg" alt="Indoor Plants">
+        <div class="p-products">
+          <h2 class="fw-normal">Indoor Plants</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/iplant03.jpg" alt="Indoor Plants">
+        <div class="p-products">
+          <h2 class="fw-normal">Indoor Plants</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <hr class="hr01">
+
+    <div class="row">
+      <p class="p-section-title">Pots</p>
+      <div class="col-lg-4">
+        <div>
+          <img class="section01-img" src="images/pot01.jpg" alt="Pot">
+        </div>
+        <div class="p-products">
+          <h2 class="fw-normal">Pot</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/pot02.jpg" alt="Pot">
+        <div class="p-products">
+          <h2 class="fw-normal">Pot</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/pot03.jpg" alt="Pot">
+        <div class="p-products">
+          <h2 class="fw-normal">Pot</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <hr class="hr01">
+
+    <div class="row">
+      <p class="p-section-title">Potted plants</p>
+      <div class="col-lg-4">
+        <div>
+          <img class="section01-img" src="images/potted01.jpg" alt="Potted Plant">
+        </div>
+        <div class="p-products">
+          <h2 class="fw-normal">Potted plant</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/potted02.jpg" alt="Potted Plant">
+        <div class="p-products">
+          <h2 class="fw-normal">Potted plant</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/potted03.jpg" alt="Potted Plant">
+        <div class="p-products">
+          <h2 class="fw-normal">Potted plant</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <hr class="hr01">
+
+    <div class="row">
+      <p class="p-section-title">Flowers</p>
+      <div class="col-lg-4">
+        <div>
+          <img class="section01-img" src="images/flower01.jpg" alt="Flower">
+        </div>
+        <div class="p-products">
+          <h2 class="fw-normal">Flower</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/flower02.jpg" alt="Flower">
+        <div class="p-products">
+          <h2 class="fw-normal">Flower</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/flower03.jpg" alt="Flower">
+        <div class="p-products">
+          <h2 class="fw-normal">Flower</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <hr class="hr01">
+
+    <div class="row">
+      <p class="p-section-title">Cactuses</p>
+      <div class="col-lg-4">
+        <div>
+          <img class="section01-img" src="images/cactus01.jpg" alt="Cactus">
+        </div>
+        <div class="p-products">
+          <h2 class="fw-normal">Cactus</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/cactus02.jpg" alt="Cactus">
+        <div class="p-products">
+          <h2 class="fw-normal">Cactus</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/cactus03.jpg" alt="Cactus">
+        <div class="p-products">
+          <h2 class="fw-normal">Cactus</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <hr class="hr01">
+
+    <div class="row">
+      <p class="p-section-title">Garden tools</p>
+      <div class="col-lg-4">
+        <div>
+          <img class="section01-img" src="images/gtool01.jpg" alt="Garden tool">
+        </div>
+        <div class="p-products">
+          <h2 class="fw-normal">Garden tool</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/gtool02.jpg" alt="Garden tool">
+        <div class="p-products">
+          <h2 class="fw-normal">Garden tool</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="section01-img" src="images/gtool03.jpg" alt="Garden tool">
+        <div class="p-products">
+          <h2 class="fw-normal">Garden tool</h2>
+          <p class="p-price">$30</p>
+          <p>Get this and make your life more brighter!</p>
+        </div>
+        <p><a class="btn btn-secondary" href="#">Shop Now &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <hr class="hr01">
+    
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
